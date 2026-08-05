@@ -133,4 +133,4 @@ COPY --from=builder --chown=scinote:scinote $APP_HOME $APP_HOME
 
 WORKDIR $APP_HOME
 
-CMD ["bundle", "exec", "rails", "server", "-b", "0.0.0.0", "-p", "ENV['PORT']"]
+CMD rails s -b 0.0.0.0
